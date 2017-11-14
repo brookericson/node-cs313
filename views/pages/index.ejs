@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+	<h1>Postal Rate Calculator</h1>
+	<form action="/postage" method="get">
+		<label>Mail Type</label>
+		<select name="type">
+			<option value="Letter(Stamped)">Letters(Stamped)</option>
+			<option value="Letter(Metered)">Letters(Metered)</option>
+			<option value="Large Envelopes(Flat)">Large Envelopes(Flats)</option>
+			<option value="Parcel">Parcels</option>
+		</select>
+		<label>Weight</label>
+		<input type="number" step="0.01" name="weight">
+
+		<input type="submit" value="Get Result" id="button">
+
+	</form>
+</body>
+</html>

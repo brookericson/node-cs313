@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+	<h1>Postal Rate Result</h1>
+	<table>
+		<tr>
+			<th>Type</th>
+			<th>Weight</th>
+			<th>Rate</th>
+		</tr>
+		<tr>
+			<td><%= type %></td>
+			<td><%= weight %></td>
+			<td>$<%= result %></td>
+		</tr>
+	</table>
+	<a href="/">Calculate a new rate</a>
+</body>
+</html>
